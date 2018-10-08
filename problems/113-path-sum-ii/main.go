@@ -13,25 +13,24 @@ func main() {
 }
 
 func pathSum(root *TreeNode, sum int) [][]int {
-	var nodes []int
-	return pathSumRev(root, nodes, sum)
+	var vals []int
+	return pathSumRev(root, vals, sum)
 }
 
-func pathSumRev(root *TreeNode, nodes []int, sum int) [][]int {
+func pathSumRev(node *TreeNode, vals []int, sum int) [][]int {
 	var result [][]int
-	nodes = append(nodes, root.Val)
-	if root.Left == nil && root.Right == nil && root.Val == sum {
-		result = append(result, nodes)
+	vals = append(vals, node.Val)
+	sum -= node.Val
+	if node.Left == nil && node.Right == nil {
+		if sum == 0 {
+			result = append(result, vals)
+		}
 	} else {
-		sum -= root.Val
-		if sum < 0 {
-			return result
+		if node.Left != nil {
+			result = append(result, pathSumRev(node.Left, vals, sum)...)
 		}
-		if root.Right != nil {
-			result = append(result, pathSumRev(root.Right, nodes, sum)...)
-		}
-		if root.Left != nil {
-			result = append(result, pathSumRev(root.Left, nodes, sum)...)
+		if node.Right != nil {
+			result = append(result, pathSumRev(node.Right, vals, sum)...)
 		}
 	}
 	return result

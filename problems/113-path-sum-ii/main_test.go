@@ -4,6 +4,8 @@ import (
 	"strconv"
 	"strings"
 	"testing"
+
+	"gopkg.in/go-playground/assert.v1"
 )
 
 type testcase struct {
@@ -27,9 +29,7 @@ func Test_pathSum(t *testing.T) {
 		rootNode := constructTree(tc.tree)
 		actual := pathSum(rootNode, tc.sum)
 
-		if actual != tc.expected {
-			t.Errorf("tree: %v, sum: %v, expected: %v, actual: %v", tc.tree, tc.sum, tc.expected, actual)
-		}
+		assert.Equal(t, actual, tc.expected)
 	}
 }
 
@@ -39,17 +39,29 @@ func Test_pathSum(t *testing.T) {
  */
 func constructTree(tree string) *TreeNode {
 	r := strings.NewReplacer("[", "", "]", "")
-	nodes := strings.Split(r.Replace(tree), ",")
-	val, _ := strconv.Atoi(nodes[0])
-	rootNode := TreeNode{
-		val,
-		nil,
-		nil,
-	}
-	for _, node := range nodes[1:] {
-		if node == "null" {
-
+	leaves := strings.Split(r.Replace(tree), ",")
+	nodes := make([]*TreeNode, len(leaves))
+	for i, le := range leaves {
+		if le != "null" {
+			val, _ := strconv.Atoi(le)
+			nodes[i] = &TreeNode{
+				val,
+				nil,
+				nil,
+			}
 		}
 	}
-	return &rootNode
+	rootNode := nodes[0]
+	for i, node := range nodes {
+		if node == nil {
+			continue
+		}
+		if i+1 < len(nodes) {
+			node.Left = nodes[i+1]
+		}
+		if i+2 < len(nodes) {
+			node.Right = nodes[i+2]
+		}
+	}
+	return rootNode
 }

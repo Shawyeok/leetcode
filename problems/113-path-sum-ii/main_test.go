@@ -24,6 +24,11 @@ func Test_pathSum(t *testing.T) {
 				[]int{5, 8, 4, 5},
 			},
 		},
+		testcase{
+			"[]",
+			1,
+			[][]int{},
+		},
 	}
 	for _, tc := range suit {
 		rootNode := constructTree(tc.tree)
@@ -52,15 +57,18 @@ func constructTree(tree string) *TreeNode {
 		}
 	}
 	rootNode := nodes[0]
-	for i, node := range nodes {
+	idx := 1
+	for _, node := range nodes {
 		if node == nil {
 			continue
 		}
-		if i+1 < len(nodes) {
-			node.Left = nodes[i+1]
+		if idx < len(nodes) {
+			node.Left = nodes[idx]
+			idx++
 		}
-		if i+2 < len(nodes) {
-			node.Right = nodes[i+2]
+		if idx < len(nodes) {
+			node.Right = nodes[idx]
+			idx++
 		}
 	}
 	return rootNode

@@ -30,37 +30,55 @@ func (this *MedianFinder) AddNum(num int) {
 		return
 	}
 
-	if this.MiddleNode.Val > num {
-		// insert before node
-		node := this.MiddleNode
-		for node.Val > num && node.Previous != nil {
+	node := this.MiddleNode
+	if num <= this.MiddleNode.Val {
+		// insert left side of MiddleNode
+		for num < node.Val && node.Previous != nil {
 			node = node.Previous
 		}
-		next := node.Next
-		newNode.Next = next
-		newNode.Previous = node
-		node.Next = newNode
-		if next != nil {
-			next.Previous = newNode
+		if num > node.Val {
+			this.insertRight(node, newNode)
+		} else {
+			this.insertLeft(node, newNode)
 		}
 
-		this.MiddleNode = this.MiddleNode.Previous
+		if this.Len%2 == 0 {
+			this.MiddleNode = this.MiddleNode.Previous
+		}
 	} else {
-		// insert after node
-		node := this.MiddleNode
-		for node.Val < num && node.Next != nil {
+		// insert right side of MiddleNode
+		for num > node.Val && node.Next != nil {
 			node = node.Next
 		}
-		next := node.Next
-		node.Next = newNode
-		newNode.Previous = node
-		newNode.Next = next
-		node.Previous = newNode
-		if next != nil {
-			next.Previous = newNode
+		if num > node.Val {
+			this.insertRight(node, newNode)
+		} else {
+			this.insertLeft(node, newNode)
 		}
 
-		this.MiddleNode = this.MiddleNode.Next
+		if this.Len%2 != 0 {
+			this.MiddleNode = this.MiddleNode.Next
+		}
+	}
+}
+
+func (this *MedianFinder) insertLeft(node *Node, newNode *Node) {
+	previous := node.Previous
+	newNode.Next = node
+	newNode.Previous = previous
+	node.Previous = newNode
+	if previous != nil {
+		previous.Next = newNode
+	}
+}
+
+func (this *MedianFinder) insertRight(node *Node, newNode *Node) {
+	next := node.Next
+	newNode.Next = next
+	newNode.Previous = node
+	node.Next = newNode
+	if next != nil {
+		next.Previous = newNode
 	}
 }
 

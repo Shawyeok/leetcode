@@ -9,3 +9,4 @@ This is my leetcode solutions written in golang, salute to [haoel's leetcode sol
 |137|[Single Number II](https://leetcode.com/problems/single-number-ii/description/)|Medium|[Go](./problems/137-single-number-ii/main.go)|2018-09-25|
 |824|[Goat Latin](https://leetcode.com/problems/goat-latin/description/)|Easy|[Go](./problems/824-goat-latin/main.go)|2018-09-30|
 |113|[Path Sum II](https://leetcode.com/problems/path-sum-ii/description/)|Medium|[Go](./problems/113-path-sum-ii/main.go)|2018-10-09|
+|295|[Find Median from Data Stream](https://leetcode.com/problems/find-median-from-data-stream/description/)|Hard|[Go](./problems/295-find-median-from-data-stream/main.go)|2018-10-10|

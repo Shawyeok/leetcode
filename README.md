@@ -12,3 +12,4 @@ This is my leetcode solutions written in golang, salute to [haoel's leetcode sol
 |295|[Find Median from Data Stream](https://leetcode.com/problems/find-median-from-data-stream/description/)|Hard|[Go](./problems/295-find-median-from-data-stream/main.go)|2018-10-10|
 |331|[Verify Preorder Serialization of a Binary Tree](https://leetcode.com/problems/verify-preorder-serialization-of-a-binary-tree/description/)|Medium|[Go](./problems/331-verify-preorder-serialization-of-a-binary-tree/main.go)|2018-10-10|
 |115|[Distinct Subsequences](https://leetcode.com/problems/distinct-subsequences/description/)|Hard|[Go](./problems/115-distinct-subsequences/main.go)|2018-10-11|
+|8|[String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/description/)|Medium|[Go](./problems/8-string-to-integer-atoi/main.go)|2018-10-12|

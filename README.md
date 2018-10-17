@@ -15,3 +15,4 @@ This is my leetcode solutions written in golang, salute to [haoel's leetcode sol
 |8|[String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/description/)|Medium|[Go](./problems/8-string-to-integer-atoi/main.go)|2018-10-12|
 |456|[132 Pattern](https://leetcode.com/problems/132-pattern/description/)|Medium|[Go](./problems/456-132-pattern/main.go)|2018-10-15|
 |872|[Leaf-Similar Trees](https://leetcode.com/problems/leaf-similar-trees/description/)|Easy|[Go](./problems/872-leaf-similar-trees/main.go)|2018-10-16|
+|413|[Arithmetic Slices](https://leetcode.com/problems/arithmetic-slices/description/)|Medium|[Go](./problems/413-arithmetic-slices/main.go)|2018-10-17|

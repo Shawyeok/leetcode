@@ -14,3 +14,4 @@ This is my leetcode solutions written in golang, salute to [haoel's leetcode sol
 |115|[Distinct Subsequences](https://leetcode.com/problems/distinct-subsequences/description/)|Hard|[Go](./problems/115-distinct-subsequences/main.go)|2018-10-11|
 |8|[String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/description/)|Medium|[Go](./problems/8-string-to-integer-atoi/main.go)|2018-10-12|
 |456|[132 Pattern](https://leetcode.com/problems/132-pattern/description/)|Medium|[Go](./problems/456-132-pattern/main.go)|2018-10-15|
+|872|[Leaf-Similar Trees](https://leetcode.com/problems/leaf-similar-trees/description/)|Easy|[Go](./problems/872-leaf-similar-trees/main.go)|2018-10-16|

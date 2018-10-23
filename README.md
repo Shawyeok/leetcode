@@ -17,3 +17,4 @@ This is my leetcode solutions written in golang, salute to [haoel's leetcode sol
 |872|[Leaf-Similar Trees](https://leetcode.com/problems/leaf-similar-trees/description/)|Easy|[Go](./problems/872-leaf-similar-trees/main.go)|2018-10-16|
 |413|[Arithmetic Slices](https://leetcode.com/problems/arithmetic-slices/description/)|Medium|[Go](./problems/413-arithmetic-slices/main.go)|2018-10-17|
 |62|[Unique Paths](https://leetcode.com/problems/unique-paths/description/)|Medium|[Go](./problems/62-unique-paths/main.go)|2018-10-18|
+|617|[Merge Two Binary Trees](https://leetcode.com/problems/merge-two-binary-trees/description/)|Easy|[Go](./problems/617-merge-two-binary-trees/main.go)|2018-10-23|

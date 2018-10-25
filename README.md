@@ -20,3 +20,4 @@ This is my leetcode solutions written in golang, salute to [haoel's leetcode sol
 |617|[Merge Two Binary Trees](https://leetcode.com/problems/merge-two-binary-trees/description/)|Easy|[Go](./problems/617-merge-two-binary-trees/main.go)|2018-10-23|
 |29|[Divide Two Integers](https://leetcode.com/problems/divide-two-integers/description/)|Medium|[Go](./problems/29-divide-two-integers/main.go)|2018-10-24|
 |208|[Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/description/)|Medium|[Go](./problems/208-implement-trie-prefix-tree/main.go)|2018-10-25|
+|394|[Decode String](https://leetcode.com/problems/decode-string/description/)|Medium|[Go](./problems/394-decode-string/main.go)|2018-10-25|

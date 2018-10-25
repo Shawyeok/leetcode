@@ -1,36 +1,30 @@
 package main
 
+import (
+	"math"
+)
+
 func main() {
 }
 
 func divide(dividend int, divisor int) int {
-	MaxInt, MinInt := 1<<31-1, -1<<31
+	if dividend == math.MinInt32 && divisor == -1 {
+		return math.MaxInt32
+	}
 
-	sign := 1
-	if dividend < 1 {
-		sign ^= -1
-	} else {
-		sign ^= 1
+	positive := true
+	if (dividend < 0 && divisor > 0) || (dividend > 0 && divisor < 0) {
+		positive = false
 	}
-	if divisor < 1 {
-		sign ^= -1
-	} else {
-		sign ^= 1
-	}
-	res := int(divideSigned(abs(dividend), abs(divisor)))
-	if sign > 0 {
-		if res > MaxInt {
-			return MaxInt
-		}
+	res := divideUnsigned(abs(dividend), abs(divisor))
+
+	if positive {
 		return res
-	}
-	if res < MinInt {
-		return MinInt
 	}
 	return -res
 }
 
-func divideSigned(dividend int, divisor int) uint {
+func divideUnsigned(dividend int, divisor int) int {
 	if dividend < divisor {
 		return 0
 	} else if dividend == divisor {
@@ -45,7 +39,7 @@ func divideSigned(dividend int, divisor int) uint {
 	}
 	diff := dividend - (n >> 1)
 	if diff >= divisor {
-		return 1<<(e-1) + divideSigned(diff, divisor)
+		return 1<<(e-1) + divideUnsigned(diff, divisor)
 	}
 
 	return 1 << (e - 1)

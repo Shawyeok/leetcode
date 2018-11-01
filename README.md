@@ -22,3 +22,4 @@ This is my leetcode solutions written in golang, salute to [haoel's leetcode sol
 |208|[Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/description/)|Medium|[Go](./problems/208-implement-trie-prefix-tree/main.go)|2018-10-25|
 |394|[Decode String](https://leetcode.com/problems/decode-string/description/)|Medium|[Go](./problems/394-decode-string/main.go)|2018-10-25|
 |393|[UTF-8 Validation](https://leetcode.com/problems/utf-8-validation/description/)|Medium|[Go](./problems/393-utf-8-validation/main.go)|2018-10-26|
+|31|[Next Permutation](https://leetcode.com/problems/next-permutation/description/)|Medium|[Go](./problems/31-next-permutation/main.go)|2018-11-01|

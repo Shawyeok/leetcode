@@ -24,3 +24,4 @@ This is my leetcode solutions written in golang, salute to [haoel's leetcode sol
 |393|[UTF-8 Validation](https://leetcode.com/problems/utf-8-validation/description/)|Medium|[Go](./problems/393-utf-8-validation/main.go)|2018-10-26|
 |31|[Next Permutation](https://leetcode.com/problems/next-permutation/description/)|Medium|[Go](./problems/31-next-permutation/main.go)|2018-11-01|
 |929|[Unique Email Addresses](https://leetcode.com/problems/unique-email-addresses/description/)|Easy|[Go](./problems/929-unique-email-addresses/main.go)|2018-11-06|
+|771|[Jewels and Stones](https://leetcode.com/problems/jewels-and-stones/description/)|Easy|[Go](./problems/771-jewels-and-stones/main.go)|2018-11-08|

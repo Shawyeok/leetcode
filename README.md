@@ -26,3 +26,4 @@ This is my leetcode solutions written in golang, salute to [haoel's leetcode sol
 |929|[Unique Email Addresses](https://leetcode.com/problems/unique-email-addresses/description/)|Easy|[Go](./problems/929-unique-email-addresses/main.go)|2018-11-06|
 |771|[Jewels and Stones](https://leetcode.com/problems/jewels-and-stones/description/)|Easy|[Go](./problems/771-jewels-and-stones/main.go)|2018-11-08|
 |709|[To Lower Case](https://leetcode.com/problems/to-lower-case/)|Easy|[Go](./problems/709-to-lower-case/main.go)|2019-08-30|
+|746|[Min Cost Climbing Stairs](https://leetcode.com/problems/min-cost-climbing-stairs/)|Easy|[Go](./problems/746-min-cost-climbing-stairs/main.go)|2019-08-31|

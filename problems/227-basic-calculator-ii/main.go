@@ -9,33 +9,19 @@ func calculate(s string) int {
 		switch s[i] {
 		case ' ':
 			// ignore
-		case '+':
+		case '+', '-':
 			if oi > 0 {
 				nums[0] = doCalculate(nums[0], nums[1], ops[0])
 				oi, ni = 0, 1
 			}
-			ops[oi] = '+'
+			ops[oi] = int32(s[i])
 			oi++
-		case '-':
-			if oi > 0 {
-				nums[0] = doCalculate(nums[0], nums[1], ops[0])
-				oi, ni = 0, 1
-			}
-			ops[oi] = '-'
-			oi++
-		case '*':
+		case '*', '/':
 			if oi > 0 && (ops[0] == '*' || ops[0] == '/') {
 				nums[0] = doCalculate(nums[0], nums[1], ops[0])
 				oi, ni = 0, 1
 			}
-			ops[oi] = '*'
-			oi++
-		case '/':
-			if oi > 0 && (ops[0] == '*' || ops[0] == '/') {
-				nums[0] = doCalculate(nums[0], nums[1], ops[0])
-				oi, ni = 0, 1
-			}
-			ops[oi] = '/'
+			ops[oi] = int32(s[i])
 			oi++
 		default:
 			var n int32

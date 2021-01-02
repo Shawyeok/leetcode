@@ -32,3 +32,4 @@ This is my leetcode solutions written in golang, salute to [haoel's leetcode sol
 |227|[Basic Calculator II](https://leetcode.com/problems/basic-calculator-ii/description/)|Medium|[Go](./problems/227-basic-calculator-ii/main.go)|2020-12-06|
 |224|[Basic Calculator](https://leetcode.com/problems/basic-calculator/)|Hard|[Go](./problems/224-basic-calculator/main.go)|2020-12-06|
 |338|[Counting Bits](https://leetcode.com/problems/counting-bits/)|Medium|[Go](./problems/338-counting-bits/main.go)|2021-01-02|
+|191|[Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/)|Medium|[Go](./problems/191-number-of-1-bits/main.go)|2021-01-02|

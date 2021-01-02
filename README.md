@@ -30,3 +30,4 @@ This is my leetcode solutions written in golang, salute to [haoel's leetcode sol
 |467|[Unique Substrings in Wraparound String](https://leetcode.com/problems/unique-substrings-in-wraparound-string/)|Medium|[Go](./problems/467-unique-substrings-in-wraparound-string/main.go)|2019-09-01|
 |121|[Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)|Easy|[Go](./problems/121-best-time-to-buy-and-sell-stock/main.go)|2020-11-12|
 |227|[Basic Calculator II](https://leetcode.com/problems/basic-calculator-ii/description/)|Medium|[Go](./problems/227-basic-calculator-ii/main.go)|2020-12-06|
+|338|[Counting Bits](https://leetcode.com/problems/counting-bits/)|Medium|[Go](./problems/338-counting-bits/main.go)|2021-01-02|
